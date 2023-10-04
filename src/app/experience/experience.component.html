@@ -1,0 +1,39 @@
+<div class="section-about">
+    <div class="section-heading">
+      <div class="title-section">
+        <div class="title">Experience</div>
+        <div class="sub-title">{{ constantService.taglineExperience }}</div>
+      </div>
+    </div>
+    <div class="section-body">
+        <div class="experience-container col-lg-6 col-md-6 col-sm-12">
+          <nz-timeline>
+            <nz-timeline-item nzPosition="left" [nzDot]="academicIconTemplate" *ngFor="let item of constantService.academic">
+              <div class="experience-item">
+                <div class="time">{{item.timeframe}}</div>
+                <div class="title">{{item.title}}</div>
+                <div class="location">{{item.location}}</div>
+              </div>
+            </nz-timeline-item>
+          </nz-timeline>
+          <ng-template #academicIconTemplate>
+            <span nz-icon nzType="ng-zorro:education" nzTheme="outline"></span>
+          </ng-template>
+        </div>
+        <div class="experience-container col-lg-6 col-md-6 col-sm-12">
+          <nz-timeline>
+            <nz-timeline-item nzPosition="left" [nzDot]="experienceIconTemplate" *ngFor="let item of constantService.job">
+              <div class="experience-item">
+                <div class="time">{{item.timeframe}}</div>
+                <div class="title">{{item.title}}</div>
+                <div class="location">{{item.location}}</div>
+              </div>
+            </nz-timeline-item>
+          </nz-timeline>
+          <ng-template #experienceIconTemplate>
+            <span nz-icon nzType="ng-zorro:suitcase" nzTheme="outline"></span>
+          </ng-template>
+        </div>
+    </div>
+  </div>
+  

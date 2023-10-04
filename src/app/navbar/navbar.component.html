@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" routerLink="/">
+        Your Logo
+      </a>
+      <div class="navbar-burger" [class.is-active]="isMenuOpen" (click)="toggleMenu()">
+        <span>hi</span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu" [class.is-active]="isMenuOpen">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLinkActive="active" routerLink="#about">About</a>
+        <a class="navbar-item" routerLinkActive="active" routerLink="#services">Skills</a>
+        <a class="navbar-item" routerLinkActive="active"routerLink="#experience">Experience</a>
+        <a class="navbar-item" routerLinkActive="active" routerLink="#contact">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+  

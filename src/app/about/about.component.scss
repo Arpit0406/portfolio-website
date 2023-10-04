@@ -1,0 +1,102 @@
+// .section-about {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 120px 0;
+//   width: 100%;
+//   background: #0b1315;
+//   .section-heading {
+//     margin-bottom: 50px;
+//     text-align: center;
+//     color: #c9ab81;
+//     margin-bottom: 12px;
+//     font-size: 18px;
+//     font-weight: 600;
+//   }
+//   .section-body {
+//     display: flex;
+//     .about-content {
+//       color: #ffffff;
+//       margin-bottom: 0;
+//       line-height: 1.9;
+//       padding: 0 12.5rem;
+//     }
+//   }
+// }
+
+.section-about {
+  display: flex;
+  flex-wrap: wrap;
+  .section-heading {
+    background: linear-gradient(rgba(18, 28, 33, 0.71), rgba(18, 28, 33, 0.71)),
+      url(../../assets/img/people-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    .title-section {
+      align-self: center;
+      padding: 0 4rem;
+      display: flex;
+      flex-direction: column;
+      .title {
+        // text-align: center;
+        color: #c9ab81;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .sub-title {
+        margin-bottom: 20px;
+        color: #ffffff;
+        // font-size: 27px;
+        font-size: 40px;
+        font-weight: 700;
+        // line-height: 33px;
+      }
+    }
+  }
+  .section-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    background-color: #0f1d22;
+    padding: 5rem 3rem;
+    .about-content {
+      color: #ffffff;
+      margin-bottom: 0;
+      line-height: 1.9;
+    }
+    .section-button {
+      display: flex;
+      //   justify-content: center;
+      button {
+        color: #ffffff;
+        border: 1px solid #c9ab81;
+        padding: 10px 20px;
+        border-radius: 0;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          background-color: #c9ab81;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  // .section-body:before {
+  //   content: open-quote;
+  //   font-weight: bold;
+  //   font-size: 100px;
+  //   color: #889c0b;
+  // }
+  // .section-body:after {
+  //   content: close-quote;
+  //   font-weight: bold;
+  //   font-size: 100px;
+  //   color: #889c0b;
+  //   align-self: flex-end;
+  // }
+}

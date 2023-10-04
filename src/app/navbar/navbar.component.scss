@@ -1,0 +1,21 @@
+.navbar {
+  /* Your styling for the header goes here */
+}
+
+.navbar-burger {
+  cursor: pointer;
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Start off-screen */
+  width: 300px; /* Adjust as needed */
+  height: 100%;
+  background-color: #333; /* Adjust as needed */
+  transition: left 0.3s ease-in-out;
+}
+
+.navbar-menu.is-active {
+  left: 0; /* Slide in from left */
+}

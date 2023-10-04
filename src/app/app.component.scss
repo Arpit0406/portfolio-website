@@ -1,0 +1,124 @@
+.body-box {
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+  width: 100%;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url(./../assets/img/home-bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .sub-title {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+  }
+  h1 {
+    color: #fff;
+    margin-bottom: -10px;
+    line-height: 1;
+    font-size: 162px;
+    font-weight: 400;
+    font-family: "Mrs Saint Delafield", cursive;
+    margin-top: 0;
+    text-align: center;
+  }
+  .typing-container {
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+
+  .typing-text {
+    color: #c9ab81;
+    border-right: 0.15em solid orange;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    @media only screen and (max-height: 500px) {
+      display: none;
+    }
+    .mouse-wrapper {
+      color: #fff;
+      font-size: 14px;
+      display: block;
+      max-width: 100px;
+      margin: auto;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: #c9ab81;
+      .mouse {
+        border: solid 2px #c9ab81;
+        border-radius: 16px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        height: 40px;
+        position: relative;
+        width: 25px;
+      }
+      .mouse .wheel {
+        background: #c9ab81;
+        border-radius: 100%;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6px;
+        width: 4px;
+        animation: ani-mouse 2s linear infinite;
+      }
+    }
+  }
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  app-about {
+    width: 100%;
+    height: inherit;
+  }
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  app-experience {
+    width: 100%;
+    height: inherit;
+  }
+}
